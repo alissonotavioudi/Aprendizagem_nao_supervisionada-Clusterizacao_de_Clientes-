@@ -28,21 +28,26 @@ Inicialmente, após realizar a importação dos dados, realizei uma análise exp
 ![download](https://github.com/alissonotavioudi/Aprendizagem_nao_supervisionada-Clusterizacao_de_Clientes-/assets/153277228/612d3a8c-b763-4414-943b-b48d4fed77ad)
 
 Passado a etapa de exploração dos dados, foi realizado um pré-processamento da variável Gender, onde a transformei de variável categórica para númerica.
-Tendo a base já no mesmo formato, o próximo passo foi identificar qual o volume de Clusters ideal (K) para a base avaliada. Para isso, utilizei aqui das variáveis Annual Income (k$) e Spending Score (1-100), variáveis estas relacionadas a Renda do Cliente e ainda qual o Gasto Médio do cliente.
+Tendo a base já no mesmo formato, o próximo passo foi identificar qual o volume de Clusters ideal (K) para a base avaliada. Para isso, utilizei aqui das variáveis Annual Income (k$) e Spending Score (1-100), variáveis estas relacionadas a Renda do Cliente e qual o Gasto Médio do cliente.
 O método empregado para identificar a quantidade ideal de clusters foi a Curva de Cotovelo (Elbow), que nos sinalizou que o número ideal seria de 5 clusters. Afim de garantir ainda este número, utilizei ainda outro método que é a Curva de Silhouette, que nos mostra em qual cluster tivemos o maior Coeficiente, que no caso, foi no Cluster 5 (0.55).
 
 Vale ressaltar ainda que avaliei a necessidade de padronizar ou normalizar a base de dados, e o que conclui é que como a base desta clusterização é relativamente pequena, seria indiferente normalizar a base neste caso, uma vez que temos o mesmo coeficiente Silhouette Score = 0.5594854531227246 tanto na base normalizada quanto na base original.
 
-Resultados
-Os resultados obtidos durante a aplicação dos algoritmos de clusterização podem ser encontrados na pasta results. Isso pode incluir visualizações gráficas, tabelas de métricas e insights sobre os grupos identificados.
+**6. Conclusões e Próximos Passos**
 
-Conclusões e Próximos Passos
-Descreva as principais conclusões derivadas da clusterização e sugira possíveis aprimoramentos ou extensões para o projeto. Isso pode incluir experimentar diferentes algoritmos, otimizar parâmetros ou explorar técnicas adicionais de pré-processamento de dados.
+Com base nos Clusters formados, é possível o Supermercado adotar estratégias distintas para a sua base ativa, desde pensar em ações de Fidelização até tomar ações visando o cuidado com potenciais perdas (Provisão Devedores Duvidosos - PDD).
+
+Inicialmente, a minha recomendação seria o Supermercado focar em **Ativação**, utilizando para isso dos clientes do Cluster 2 (Alta renda e Gasto médio baixo). O objetivo aqui seria fomentar que estes clientes passassem a comprar mais no supermercado, de modo que no curto prazo estes clientes pudessem "migrar" para o Cluster 4 (Alta renda e Gasto médio alto). 
+
+Uma outra estratégia passível de ser feita pelo Supermercado, pensando que o supermercado possa ter um "cartão próprio", e que assim, exista um risco de PDD inerente a sua operação, seria ser estabelecido uma política que liberasse para os clientes do Cluster 3 compras apenas pagas a vista ou em cartão que não o vinculado ao supermercado (Private Label). 
+
+Ressalto que esta são apenas duas estratégias, mas certamente existem novas abordagens possíveis a partir desta clusterização.
+
+Como oportunidades de desenvolvimento para este projeto, é válido pensar em criar os clusters utilizando os demais algoritmos existentes.
 
 Contribuições
-Se você deseja contribuir para este projeto, por favor, siga as orientações de contribuição no arquivo CONTRIBUTING.md.
+Se você deseja contribuir para este projeto, fique a vontade para criar uma cópia e realizar as melhorias !
 
 Licença
 Este projeto é distribuído sob a licença [especificar a licença utilizada].
 
-Nota: Certifique-se de fornecer informações específicas sobre o conjunto de dados, detalhes do ambiente de execução, e personalize o README para se adequar ao contexto e aos objetivos do seu projeto de clusterização.
