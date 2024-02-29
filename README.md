@@ -1,34 +1,37 @@
-##Descrição do Projeto
-Este projeto visa explorar e implementar técnicas de clusterização para agrupar dados não rotulados em conjuntos significativos. A clusterização é uma forma de aprendizado não supervisionado, onde o algoritmo busca identificar padrões e agrupar dados sem a necessidade de rótulos prévios.
+**1. Título do projeto**
 
-Objetivo
-O objetivo principal deste projeto é aplicar algoritmos de clusterização em um conjunto de dados específico para identificar grupos intrínsecos e entender as relações entre os dados. Os resultados obtidos podem ser úteis para análise exploratória, segmentação de mercado, detecção de anomalias, entre outras aplicações.
+Clusterização de Clientes de Supermercados
 
-Algoritmos Utilizados
-K-Means: Um dos algoritmos mais comuns e simples de clusterização, que atribui cada ponto de dado ao cluster cujo centro (média) é mais próximo.
+**2. Objetivo do projeto**
 
-Hierarchical Clustering: Método que constrói uma hierarquia de clusters, começando com cada ponto como um cluster separado e combinando clusters sucessivos.
+Este projeto teve como objetivo identificar padrões nas variáveis estudadas que permitissem o agrupamento dos Clientes em Clusters, afim de permitir a empresa estudada direcionar estratégias distintas para os diferentes clusters.
 
-DBSCAN (Density-Based Spatial Clustering of Applications with Noise): Um algoritmo que agrupa pontos em regiões de alta densidade, separadas por regiões de baixa densidade.
+**3. Base de Dados**
 
-Conjunto de Dados
-O conjunto de dados utilizado neste projeto consiste em [descrever brevemente o conjunto de dados]. Os detalhes sobre os atributos, tamanho do conjunto de dados e qualquer pré-processamento realizado podem ser encontrados na pasta data.
+O conjunto de dados utilizado neste Projeto está disponível em .CSV no caminho https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python.
+O dataset possui 200 linhas e 5 features (4 númericas e 1 categórica). Afim de manter todas as variáveis em formáto númerico, foi necessário realizar o pré-processamento da variável "Gender".
+Ainda, cale ressaltar que o dataset não possui dados nulos, não sendo assim necessário realizar a etapa de remoção ou preechimento dos valores ausentes.
+ 
+**4. Algoritmo utilizado**
 
-Estrutura do Projeto
-data/: Contém o conjunto de dados utilizado, bem como quaisquer scripts ou notebooks relacionados ao pré-processamento dos dados.
+Para este trabalho, optei por usar o algoritmo K-Means, um dos mais utilizados para clusterizar bases. Este algoritmo trabalha atribuindo a cada ponto(dados) o cluster cujo centro (média) é mais próximo.
 
-notebooks/: Contém Jupyter Notebooks ou scripts Python que demonstram o processo de clusterização, desde a carga dos dados até a análise dos resultados.
+Cabe ressaltar que existem ainda outros algoritmos para clusterização, entre eles:
 
-src/: Módulos e scripts Python que contêm funções reutilizáveis, especialmente aquelas relacionadas à implementação de algoritmos de clusterização.
+- Hierarchical Clustering: Método que constrói uma hierarquia de clusters, começando com cada ponto como um cluster separado e combinando clusters sucessivos.
+* DBSCAN (Density-Based Spatial Clustering of Applications with Noise): Um algoritmo que agrupa pontos em regiões de alta densidade, separadas por regiões de baixa densidade.
 
-results/: Armazena os resultados da clusterização, como visualizações gráficas, tabelas ou métricas de avaliação.
+**5. Estrutura do Projeto**
 
-README.md: Documentação principal do projeto que fornece uma visão geral, instruções de configuração e execução, além de qualquer informação relevante.
+Inicialmente, após realizar a importação dos dados, realizei uma análise exploratória afim de entender melhor os dados trabalhados. Aqui pode-se destacar a análise multivariada realizada utilizando a variável Gender x demais variáveis do dataset. O objetivo aqui foi avaliar se já teria algum grupo definido avaliando o sexo do cliente x demais features, o que conforme foi visto, não existe.
 
-Como Executar
-[Instruções sobre como instalar dependências e configurar o ambiente].
+![download](https://github.com/alissonotavioudi/Aprendizagem_nao_supervisionada-Clusterizacao_de_Clientes-/assets/153277228/612d3a8c-b763-4414-943b-b48d4fed77ad)
 
-[Passos para executar o código principal, por exemplo, rodar um notebook ou um script Python].
+Passado a etapa de exploração dos dados, foi realizado um pré-processamento da variável Gender, onde a transformei de variável categórica para númerica.
+Tendo a base já no mesmo formato, o próximo passo foi identificar qual o volume de Clusters ideal (K) para a base avaliada. Para isso, utilizei aqui das variáveis Annual Income (k$) e Spending Score (1-100), variáveis estas relacionadas a Renda do Cliente e ainda qual o Gasto Médio do cliente.
+O método empregado para identificar a quantidade ideal de clusters foi a Curva de Cotovelo (Elbow), que nos sinalizou que o número ideal seria de 5 clusters. Afim de garantir ainda este número, utilizei ainda outro método que é a Curva de Silhouette, que nos mostra em qual cluster tivemos o maior Coeficiente, que no caso, foi no Cluster 5 (0.55).
+
+Vale ressaltar ainda que avaliei a necessidade de padronizar ou normalizar a base de dados, e o que conclui é que como a base desta clusterização é relativamente pequena, seria indiferente normalizar a base neste caso, uma vez que temos o mesmo coeficiente Silhouette Score = 0.5594854531227246 tanto na base normalizada quanto na base original.
 
 Resultados
 Os resultados obtidos durante a aplicação dos algoritmos de clusterização podem ser encontrados na pasta results. Isso pode incluir visualizações gráficas, tabelas de métricas e insights sobre os grupos identificados.
