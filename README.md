@@ -35,6 +35,8 @@ Vale ressaltar ainda que avaliei a necessidade de padronizar ou normalizar a bas
 
 **6. Conclusões e Próximos Passos**
 
+![Clusters formados](https://github.com/alissonotavioudi/Aprendizagem_nao_supervisionada-Clusterizacao_de_Clientes-/assets/153277228/41cb9d34-2220-467a-ba26-0ac625b37675)
+
 Com base nos Clusters formados, é possível o Supermercado adotar estratégias distintas para a sua base ativa, desde pensar em ações de Fidelização até tomar ações visando o cuidado com potenciais perdas (Provisão Devedores Duvidosos - PDD).
 
 Inicialmente, a minha recomendação seria o Supermercado focar em **Ativação**, utilizando para isso dos clientes do Cluster 2 (Alta renda e Gasto médio baixo). O objetivo aqui seria fomentar que estes clientes passassem a comprar mais no supermercado, de modo que no curto prazo estes clientes pudessem "migrar" para o Cluster 4 (Alta renda e Gasto médio alto). 
@@ -45,9 +47,10 @@ Ressalto que esta são apenas duas estratégias, mas certamente existem novas ab
 
 Como oportunidades de desenvolvimento para este projeto, é válido pensar em criar os clusters utilizando os demais algoritmos existentes.
 
+
+
 Contribuições
 Se você deseja contribuir para este projeto, fique a vontade para criar uma cópia e realizar as melhorias !
 
-Licença
-Este projeto é distribuído sob a licença [especificar a licença utilizada].
+
 
