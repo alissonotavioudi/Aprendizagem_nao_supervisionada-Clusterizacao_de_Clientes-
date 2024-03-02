@@ -49,7 +49,7 @@ Como oportunidades de desenvolvimento para este projeto, é válido pensar em cr
 
 
 
-Contribuições
+Contribuiçõe:
 Se você deseja contribuir para este projeto, fique a vontade para criar uma cópia e realizar as melhorias !
 
 
