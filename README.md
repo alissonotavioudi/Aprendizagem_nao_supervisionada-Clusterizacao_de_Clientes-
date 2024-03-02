@@ -9,7 +9,7 @@ Este projeto teve como objetivo identificar padrões nas variáveis estudadas qu
 **3. Base de Dados**
 
 O conjunto de dados utilizado neste Projeto está disponível em .CSV no caminho https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python.
-O dataset possui 200 linhas e 5 features (4 númericas e 1 categórica). Afim de manter todas as variáveis em formáto númerico, foi necessário realizar o pré-processamento da variável "Gender".
+O dataset possui 200 linhas e 5 features (4 númericas e 1 categórica). Afim de manter todas as variáveis em formato númerico, foi necessário realizar o pré-processamento da variável "Gender".
 Ainda, cale ressaltar que o dataset não possui dados nulos, não sendo assim necessário realizar a etapa de remoção ou preechimento dos valores ausentes.
  
 **4. Algoritmo utilizado**
