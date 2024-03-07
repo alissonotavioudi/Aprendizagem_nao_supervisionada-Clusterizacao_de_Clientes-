@@ -41,7 +41,7 @@ Com base nos Clusters formados, é possível o Supermercado adotar estratégias 
 
 Inicialmente, a minha recomendação seria o Supermercado focar em **Ativação**, utilizando para isso dos clientes do Cluster 2 (Alta renda e Gasto médio baixo). O objetivo aqui seria fomentar que estes clientes passassem a comprar mais no supermercado, de modo que no curto prazo estes clientes pudessem "migrar" para o Cluster 4 (Alta renda e Gasto médio alto). 
 
-Uma outra estratégia passível de ser feita pelo Supermercado, pensando que o supermercado possa ter um "cartão próprio", e que assim, exista um risco de PDD inerente a sua operação, seria ser estabelecido uma política que liberasse para os clientes do Cluster 3 compras apenas pagas a vista ou em cartão que não o vinculado ao supermercado (Private Label). 
+Uma outra estratégia passível de ser feita pelo Supermercado, pensando que o supermercado possa ter um "cartão próprio", e que assim, exista um risco de PDD inerente a sua operação, seria ser estabelecido uma política que liberasse para os clientes do Cluster 3 compras apenas pagas a vista ou em cartão que não o vinculado ao supermercado (Private Label).
 
 Ressalto que esta são apenas duas estratégias, mas certamente existem novas abordagens possíveis a partir desta clusterização.
 
